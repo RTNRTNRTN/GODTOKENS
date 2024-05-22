@@ -137,8 +137,8 @@ img { height: auto; }
 
 input,
 button {
-  background: none;
-  border: none;
+  background: yellow;
+  border: black;
   font: inherit;
 }
 
