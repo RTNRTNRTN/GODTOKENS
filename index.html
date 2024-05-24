@@ -31,9 +31,13 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <script src="https://widget.raydium.io/swap.js"></script>
+
 </head>
+     
 
 <body id="top">
+  
   
 
   <!-- 
@@ -50,10 +54,7 @@
 
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
-          <div><button onclick="getAccount()">Connect Wallet</button><button onclick="disconnectAccount()">Log Out</button><br><br>
-            Account:<span id="user-account"></span> </div>
-          <!-- partial -->
-            <script src='https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js'></script><script  src="./script.js"></script>
+
           <li>
             <a href="#" class="navbar-link label-lg link:hover">Home</a>
           </li>
@@ -88,8 +89,10 @@
         </button>
 
       </div>
-
+     
     </div>
+    
+
   </header>
 
 
@@ -110,16 +113,22 @@
           We're fed 
             up with <span class="span">scammers! </span>
           </h1>
-
+         
           <p class="section-text body-lg">
           With GOD Tokens, you'll be able to identify genuine tokens backed by real projects amidst this market filled with scams.
             We are committed to thoroughly vetting each project, contacting teams directly,
             and only listing those that demonstrate hard work and dedication. Join us in creating a safer and more trustworthy crypto community.
           </p>
 
-          <a href="#" class="btn">Explore now</a>
+        <!--  <a href="#" class="btn">Explore now</a> -->
 
         </div>
+        <!--<iframe src="https://www.pump.fun/6QZVC4dieDCeEsSz1Pv8yvRCAz9VdXpkU9dTpRBmE6Pz"  width="1200"  height="600"></iframe> -->
+        <iframe src="https://www.pump.fun/6QZVC4dieDCeEsSz1Pv8yvRCAz9VdXpkU9dTpRBmE6Pz" height="800" width="800" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no" style="overflow: hidden"></iframe>
+
+
+        <div>
+</div>
       </section>
 
 
@@ -173,12 +182,12 @@
                     </p>
 
                     <p class="card-text">25 Items</p>
-
+                    
                   </div>
 
                 </div>
+                
               </li>
-
               <li class="slider-item">
                 <div class="collection-card card">
 
@@ -1446,8 +1455,19 @@
   <!-- 
     - ionicon link
   -->
+  <script type='text/javascript'>
+    document.oncontextmenu = function(){return false}
+  </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new RaydiumSwap({
+            container: '#raydium-swap-widget',
+            theme: 'dark'  // Opcional: puedes usar 'light' para un tema claro
+        });
+    });
+</script>
 
 </body>
 
